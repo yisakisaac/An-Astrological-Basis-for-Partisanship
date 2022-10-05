@@ -4,7 +4,10 @@ library(poliscidata)
 xtp.chi2(nes,relig_4cat,dem_raceeth,wt)
 
 #Cross-Tabulation of Zodiac Sign and Politcal Party
-xtp(gss,partyid_3,zodiac,wtss,main="Relationship between Zodiac Sign and Political Party",ylab="Political Party",xlab="Zodiac Sign")
+xtp(gss,partyid_3,zodiac,wtss,
+    main="Relationship between Zodiac Sign and Political Party",
+    ylab="Political Party",
+    xlab="Zodiac Sign")
 
 #Chi-Squared Test of Zodiac Sign and Politcal Party
 xtp.chi2(gss,partyid_3,zodiac,wtss)
